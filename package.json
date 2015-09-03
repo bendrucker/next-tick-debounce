@@ -1,7 +1,7 @@
 {
   "name": "next-tick-debounce",
   "main": "index.js",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Debounce multiple synchronous function calls into a single async call",
   "license": "MIT",
   "repository": "bendrucker/next-tick-debounce",
