@@ -1,0 +1,35 @@
+{
+  "name": "next-tick-debounce",
+  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Debounce multiple synchronous function calls into a single async call",
+  "license": "MIT",
+  "repository": "bendrucker/next-tick-debounce",
+  "author": {
+    "name": "Ben Drucker",
+    "email": "bvdrucker@gmail.com",
+    "url": "bendrucker.me"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "keywords": [
+    "async",
+    "nextTick",
+    "function",
+    "call",
+    "debounce"
+  ],
+  "devDependencies": {
+    "tape": "^4.0.0",
+    "standard": "^4.0.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "assert-function": "~1.0.0",
+    "next-tick": "~0.2.2",
+    "to-array": "~0.1.4"
+  }
+}
