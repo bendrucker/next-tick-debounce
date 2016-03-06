@@ -11,15 +11,22 @@ test(function (t) {
 
   var debounced = debounce(fn)
   debounced.call(context, 1, 2)
-  debounced.call(context, 1, 2)
+  debounced.call(context, 2, 4)
 
+  var ticked = false
   nextTick(function () {
-    debounced.call(context, 1, 2)
+    ticked = true
+    debounced.call(context, 4, 8)
   })
 
   function fn (a, b) {
-    t.equal(a, 1)
-    t.equal(b, 2)
+    if (!ticked) {
+      t.equal(a, 2)
+      t.equal(b, 4)
+    } else {
+      t.equal(a, 4)
+      t.equal(b, 8)
+    }
     t.equal(this, context)
   }
 })

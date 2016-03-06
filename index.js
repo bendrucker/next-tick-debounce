@@ -15,9 +15,10 @@ function debounce (fn) {
   return debounced
 
   function debounced () {
-    if (args !== null) return
+    var previous = args
     args = toArray(arguments)
     context = this
+    if (previous !== null) return
     nextTick(next)
   }
 

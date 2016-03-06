@@ -30,6 +30,8 @@ setTimeout(debounced, 10)
 //=> 1
 ```
 
+The debounced function runs with the last set of arguments/context.
+
 ## API
 
 #### `debounce(fn)` -> `function`
