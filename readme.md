@@ -1,4 +1,4 @@
-# next-tick-debounce [![Build Status](https://travis-ci.org/bendrucker/next-tick-debounce.svg?branch=master)](https://travis-ci.org/bendrucker/next-tick-debounce)
+# next-tick-debounce [![Build Status](https://travis-ci.org/bendrucker/next-tick-debounce.svg?branch=master)](https://travis-ci.org/bendrucker/next-tick-debounce) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/next-tick-debounce.svg)](https://greenkeeper.io/)
 
 > Debounce multiple synchronous function calls into a single async call
 
